@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+    <filter>
+        <filter-name>encoding</filter-name>
+        <filter-class>filter.EncodingFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+    </filter>
+    <filter>
+        <filter-name>security</filter-name>
+        <filter-class>filter.SessionFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>encoding</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>security</filter-name>
+        <url-pattern>/index/*</url-pattern>
+    </filter-mapping>
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>servlet.Login</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Register</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>servlet.Register</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Check</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>servlet.Check</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Publish</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>servlet.Publish</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Search</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>servlet.Search</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddFriend</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>servlet.AddFriend</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Apply</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>servlet.Apply</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Refuse</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>servlet.Refuse</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DelFriend</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>servlet.DelFriend</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SetAvatar</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>servlet.SetAvatar</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SetPassword</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>servlet.SetPassword</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SeeNative</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>servlet.SeeNative</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetPraise</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>servlet.GetPraise</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DelText</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>servlet.DelText</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Praise</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>servlet.Praise</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CreateCommentFrom</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>servlet.CreateCommentFrom</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Comment</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>servlet.Comment</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DelComment</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>servlet.DelComment</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/servlet/Login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Register</servlet-name>
+    <url-pattern>/servlet/Register</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Check</servlet-name>
+    <url-pattern>/servlet/Check</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Publish</servlet-name>
+    <url-pattern>/servlet/Publish</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Search</servlet-name>
+    <url-pattern>/servlet/Search</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddFriend</servlet-name>
+    <url-pattern>/servlet/AddFriend</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Apply</servlet-name>
+    <url-pattern>/servlet/Apply</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Refuse</servlet-name>
+    <url-pattern>/servlet/Refuse</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DelFriend</servlet-name>
+    <url-pattern>/servlet/DelFriend</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SetAvatar</servlet-name>
+    <url-pattern>/servlet/SetAvatar</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SetPassword</servlet-name>
+    <url-pattern>/servlet/SetPassword</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SeeNative</servlet-name>
+    <url-pattern>/servlet/SeeNative</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetPraise</servlet-name>
+    <url-pattern>/servlet/GetPraise</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DelText</servlet-name>
+    <url-pattern>/servlet/DelText</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Praise</servlet-name>
+    <url-pattern>/servlet/Praise</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CreateCommentFrom</servlet-name>
+    <url-pattern>/servlet/CreateCommentFrom</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Comment</servlet-name>
+    <url-pattern>/servlet/Comment</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DelComment</servlet-name>
+    <url-pattern>/servlet/DelComment</url-pattern>
+  </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
+
+</web-app>
